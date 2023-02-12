@@ -74,7 +74,7 @@ end
 threads.each { |t| t.join }
 
 puts "\nSummary:"
-puts "Note who gets the class level conch"
-puts "Note who gets the shared conch"
-puts "Now see how Calvin and Matt got their own conch!"
+puts "Note who gets the class level conch - it wont switch hands because the class level variable is shared by all threads"
+puts "Note who gets the shared conch - it wont switch hands because even though it is it's own instance, they share a static class variable"
+puts "Now see how Calvin and Matt got their own conch! Instances level object belongs to the instance itself."
 puts "rerun this over and over and see how the conch may change hands depending on which thread runs"
