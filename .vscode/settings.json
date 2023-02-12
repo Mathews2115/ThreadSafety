@@ -1,0 +1,12 @@
+{
+    "rufo.useBundler": false,
+    "rufo.exe": "/home/catnix/.rbenv/shims/rufo",
+  
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useLanguageServer": true, // use the internal language server (see below)
+    "ruby.lint": {
+
+    },
+    "ruby.format": "rufo", // use rubocop for formatting
+    "editor.formatOnSave": true
+}
