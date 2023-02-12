@@ -13,8 +13,10 @@
 * https://blog.arkency.com/3-ways-to-make-your-ruby-object-thread-safe/
 
 ## Rails App, thread safety
-If you follow rails conventions, and avoid global and class level instance variables, you're mostly* fine.
-(*) But are you're gems?
+* If you follow rails conventions, and avoid global and class level instance variables, you're mostly* fine.
+ * (*) But are you're gems?
+* If you are using `Thread.current`, you're probably going to introduce another bug, even if you are attempting to fix an unsafe gem problem.
+* Consider wrapping unsafe object access in a mutex
 
 ### Helpful links
 https://workingwithruby.com/wwrt/intro
